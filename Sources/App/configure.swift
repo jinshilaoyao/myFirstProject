@@ -31,7 +31,7 @@ public func configure(_ config: inout Config, _ env: inout Environment, _ servic
     services.register(migrations)
     
     var nioServerConfig = NIOServerConfig.default()
-    nioServerConfig.hostname = "47.98.214.107"
+    nioServerConfig.hostname = "0.0.0.0"
     nioServerConfig.port = 8067
     services.register(nioServerConfig)
 }
